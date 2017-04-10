@@ -1,0 +1,14 @@
+int a = 50;
+double b = 0.56;
+double c;
+if (a > b) {
+    c = a + b;
+} else {
+    c = a * b;
+}
+double d;
+d = a + b * c;
+while (a > 100) {
+    int e = 0xA;
+    a += e;
+}

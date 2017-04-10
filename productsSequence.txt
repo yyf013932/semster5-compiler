@@ -1,0 +1,97 @@
+1 :S → Stat S 
+2 :Stat → V 
+3 :V → $K_TYPE $ID A $SEMI 
+4 :A → $ASSIGN B 
+5 :B → $NUM 
+6 :S → Stat S 
+7 :Stat → V 
+8 :V → $K_TYPE $ID A $SEMI 
+9 :A → $ASSIGN B 
+10:B → $NUM 
+11:S → Stat S 
+12:Stat → V 
+13:V → $K_TYPE $ID A $SEMI 
+14:A → ε
+15:S → Stat S 
+16:Stat → I 
+17:I → $K_IF $LPAREN Con $RPAREN $LCURLYP S $RCURLYP $K_ELSE $LCURLYP S $RCURLYP 
+18:Con → B L B 
+19:B → $ID 
+20:L → $GT 
+21:B → $ID 
+22:S → Stat S 
+23:Stat → O 
+24:O → $ID Assign R $SEMI 
+25:Assign → $ASSIGN 
+26:R → P R' 
+27:P → Q P' 
+28:Q → $ID T 
+29:T → ε
+30:P' → ε
+31:R' → $PLUS P R' 
+32:P → Q P' 
+33:Q → $ID T 
+34:T → ε
+35:P' → ε
+36:R' → ε
+37:S → ε
+38:S → Stat S 
+39:Stat → O 
+40:O → $ID Assign R $SEMI 
+41:Assign → $ASSIGN 
+42:R → P R' 
+43:P → Q P' 
+44:Q → $ID T 
+45:T → ε
+46:P' → $TIMES Q P' 
+47:Q → $ID T 
+48:T → ε
+49:P' → ε
+50:R' → ε
+51:S → ε
+52:S → Stat S 
+53:Stat → V 
+54:V → $K_TYPE $ID A $SEMI 
+55:A → ε
+56:S → Stat S 
+57:Stat → O 
+58:O → $ID Assign R $SEMI 
+59:Assign → $ASSIGN 
+60:R → P R' 
+61:P → Q P' 
+62:Q → $ID T 
+63:T → ε
+64:P' → ε
+65:R' → $PLUS P R' 
+66:P → Q P' 
+67:Q → $ID T 
+68:T → ε
+69:P' → $TIMES Q P' 
+70:Q → $ID T 
+71:T → ε
+72:P' → ε
+73:R' → ε
+74:S → Stat S 
+75:Stat → W 
+76:W → $K_WHILE $LPAREN Con $RPAREN $LCURLYP S $RCURLYP 
+77:Con → B L B 
+78:B → $ID 
+79:L → $GT 
+80:B → $NUM 
+81:S → Stat S 
+82:Stat → V 
+83:V → $K_TYPE $ID A $SEMI 
+84:A → $ASSIGN B 
+85:B → $NUM 
+86:S → Stat S 
+87:Stat → O 
+88:O → $ID Assign R $SEMI 
+89:Assign → $PA 
+90:R → P R' 
+91:P → Q P' 
+92:Q → $ID T 
+93:T → ε
+94:P' → ε
+95:R' → ε
+96:S → ε
+97:S → ε
